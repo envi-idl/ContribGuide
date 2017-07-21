@@ -1,0 +1,39 @@
+{
+  "name": "edge_canny",
+  "display_name": "Edge Canny",
+  "base_class": "IDLTaskFromProcedure",
+  "routine": "edge_canny",
+  "description": "Runs canny edge detection on input.",
+  "schema": "idltask_1.0",
+  "parameters": [
+    {
+      "name": "input",
+      "direction": "input",
+      "choice_list": [
+        "image.tif",
+        "boulder.tif"
+      ],
+      "type": "STRING",
+      "display_name": "Select an input file",
+      "default": "image.tif",
+      "required": true,
+      "description": "input"
+    },
+    {
+      "name": "before",
+      "direction": "output",
+      "type": "string",
+      "display_name": "Before image",
+      "required": true,
+      "description": "The image converted to png before running Canny Edge detection."
+    },
+    {
+      "name": "result",
+      "direction": "output",
+      "type": "string",
+      "display_name": "Result image",
+      "required": true,
+      "description": "A png of the image with Canny Edge detection applied."
+    }
+  ]
+}

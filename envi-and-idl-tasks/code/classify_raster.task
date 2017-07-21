@@ -1,0 +1,26 @@
+{
+  "name": "ClassifyRaster",
+  "baseClass": "ENVITaskFromProcedure",
+  "routine": "classify_raster",
+  "displayName": "Classification Example",
+  "version": "5.3",
+  "description": "This is an example of a custom task that performs classification and classification cleanup.",
+  "parameters":[
+    {
+      "name": "INPUT_RASTER",
+      "displayName": "Input Raster",
+      "dataType": "ENVIRASTER",
+      "direction": "input",
+      "parameterType": "required",
+      "description": "Specify the raster to perform classification on."
+    },
+    {
+      "name": "OUTPUT_RASTER",
+      "displayName": "Output Raster",
+      "dataType": "ENVIRASTER",
+      "direction": "output",
+      "parameterType": "required",
+      "description": "This is a reference to the output raster of filetype ENVI."
+    }
+  ]
+}

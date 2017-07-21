@@ -1,0 +1,45 @@
+{
+  "name": "favorite_plot",
+  "display_name": "Favorite Plot",
+  "base_class": "IDLTaskFromProcedure",
+  "routine": "favorite_plot",
+  "description": "Favorite Plot",
+  "schema": "idltask_1.0",
+  "parameters": [
+    {
+      "name": "exponent",
+      "direction": "input",
+      "default": -0.02,
+      "type": "double",
+      "display_name": "Exponent",
+      "required": false,
+      "description": "The exponent to use when generating the plot."
+    },
+    {
+      "name": "x",
+      "direction": "output",
+      "type": "floatarray",
+      "dimensions":"[*]",
+      "display_name": "X Values",
+      "required": true,
+      "description": "The x values for the plot"
+    },
+    {
+      "name": "y",
+      "direction": "output",
+      "type": "floatarray",
+      "dimensions":"[*]", 
+      "display_name": "Y Values",
+      "required": true,
+      "description": "The y values for the plot"
+    },
+    {
+      "name": "RESULT",
+      "direction": "output",
+      "type": "string",
+      "display_name": "PNG Output",
+      "required": true,
+      "description": "A PNG file containing the plot."
+    }
+  ]
+}

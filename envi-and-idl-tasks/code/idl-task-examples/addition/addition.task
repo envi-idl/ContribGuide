@@ -1,0 +1,42 @@
+{
+  "name": "addition",
+  "display_name": "Addition",
+  "base_class": "IDLTaskFromProcedure",
+  "routine": "addition",
+  "description": "An addition task.",
+  "schema": "idltask_1.0",
+  "parameters": [
+    {
+      "name": "a",
+      "direction": "input",
+      "type": "double",
+      "display_name": "a",
+      "required": true,
+      "description": "The first value in addition."
+    },
+    {
+      "name": "b",
+      "direction": "input",
+      "type": "double",
+      "display_name": "B",
+      "required": true,
+      "description": "The second value in addition."
+    },
+    {
+      "name": "result",
+      "direction": "output",
+      "type": "double",
+      "display_name": "Result",
+      "required": true,
+      "description": "The result of the addition."
+    },
+    {
+      "name": "c",
+      "direction": "input",
+      "type": "double",
+      "display_name": "c",
+      "required": false,
+      "description": "The optional thrid value in addition."
+    }
+  ]
+}
